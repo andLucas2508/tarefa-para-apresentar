@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noivas em Ação</title>
+    <link rel="stylesheet" href="noiva.css">
+    <link rel="icon" href="img/images copy.png" type="image/png">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#home"><img src="img/images copy.png" alt=""></a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li class="dropdown">
+            <a href="#acessorios" class="dropbtn">Acessórios</a>
+            <ul class="dropdown-content">
+                <li><a href="#Colares">Colares</a></li>
+                <li><a href="#Brincos">Brincos</a></li>
+                <li><a href="#acessórios para cabelo">Acessórios para cabelo</a></li>
+            </ul>
+        </li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="carrinho">Carrinho</a></li>
+    </ul>
+</nav>
+
+<BR>
+<h2>Venha se preparar para o seu grande dia!</h2>
+<br><br>
+<main>
+    <!--seção de produto-->
+    <section class="produto">
+        <!--div que contem as imagens do produto-->
+        <div class="imagens-produto">
+            <!--imagem principal do produto-->
+            <img src="img/8.jpg" alt="produto principal" class="imagem-principal" id="imagem-principal">
+            <!--miniaturas das imagens-->
+            <div class="miniaturas">
+                <img src="img/1 (2).png" alt="miniatura 1" class="miniatura" data-imagem="miniatura 1">
+                <img src="img/2.png" alt="miniatura 2" class="miniatura" data-imagem="miniatura 2">
+                <img src="img/3.png" alt="miniatura 3" class="miniatura" data-imagem="miniatura 3">
+            </div>
+        </div>
+
+        <br><br>
+        <!--div que contem os detalhes do produto-->
+        <div class="detalhes"> <!-- Corrigido aqui -->
+            <p class="descrição">Vestido florido com renda e corset estilo princesa.</p>
+            <!--preço do produto-->
+            <p class="preco">R$ 1299,99</p>
+            <!--formulario para selecionar tamanho e cor do produto-->
+            <form class="opcoes-compra">
+                <!--seleção de tamanho-->
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho">
+                    <option>P</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>GG</option>
+                </select>
+                <!--seleção de cor-->
+                <label for="cor">Cor:</label>
+                <select id="cor">
+                    <option>Branco</option>
+                    <option>Branco Gelo</option>
+                    <option>Creme</option>
+                </select>
+                <!--botão de comprar-->
+                <button type="submit">Comprar</button>
+            </form>
+        </div>
+    </section>
+
+    <!--seção de comentários dos clientes-->
+    <section class="comentários">
+        <h3>Comentários dos clientes</h3> <!--Titulo da seleção de comentários-->
+        <!--comentario 1-->
+        <div class="comentário">
+            <img src="img/90.ico" alt="foto de bag" class="foto-usuario">
+            <p><strong>Gab:</strong> Muito bom, gostei muito, ótima qualidade.</p>
+        </div>
+        <!--comentario 2-->
+        <div class="comentário">
+            <img src="img/91.ico" alt="foto de joao" class="foto-usuario">
+            <p><strong>João:</strong> Muito bom, gostei muito, meu casamento ficou mais lindo ainda.</p>
+        </div>
+        <!--comentario 3-->
+        <div class="comentário">
+            <img src="img/92.ico" alt="foto de fernando" class="foto-usuario">
+            <p><strong>Fernando:</strong> Esse vestido tornou o meu dia ainda mais especial.</p>
+        </div>
+    </section>
+</main>
+<script src="app.js"></script> <!-- Corrigido aqui -->
+</body>
+</html>
